@@ -1,11 +1,17 @@
 import getRockets from './RocketAPI';
 
 const GET_ROCKET = 'rocketStore / rockets / GET_ROCKET';
+const ADD_RESERVARION = 'rocketStore / rockets / ADD_RESERVARION';
 
 const initialState = [];
 
 export const loadRocket = (payload) => ({
   type: GET_ROCKET,
+  payload,
+});
+
+export const addReservation = (payload) => ({
+  type: ADD_RESERVARION,
   payload,
 });
 
@@ -18,7 +24,7 @@ export const loadRockets = () => (dispatch) => {
       rocketId.name = rocket.rocket_name;
       rocketId.description = rocket.description;
       rocketId.image = rocket.flickr_images;
-      // rocketId.reserved = false;
+      rocketId.reserved = false;
       rocketData.push(rocketId);
     });
     dispatch(loadRocket(rocketData));
@@ -30,6 +36,16 @@ const reducer = (state = initialState, action) => {
     case GET_ROCKET:
       return action.payload;
 
+    case ADD_RESERVARION: {
+      const newState = state.map((rocket) => {
+        if (rocket.id !== action.payload) {
+          return rocket;
+        }
+        rocket.reserved = !rocket.reserved;
+        return rocket;
+      });
+      return newState;
+    }
     default:
       return state;
   }
