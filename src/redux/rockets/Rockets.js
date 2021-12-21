@@ -1,15 +1,15 @@
-import {getRockets} from './RocketAPI';
+import getRockets from './RocketAPI';
 
-const GET_ROCKET = rocketStore/rockets/GET_ROCKET;
+const GET_ROCKET = 'rocketStore / rockets / GET_ROCKET';
 
 const initialState = [];
 
 export const loadRocket = (payload) => ({
   type: GET_ROCKET,
-  payload
+  payload,
 });
 
-export const loadRockets = () => {
+export const loadRockets = () => (dispatch) => {
   getRockets().then((rockets) => {
     const rocketData = [];
     rockets.forEach((rocket) => {
@@ -18,9 +18,9 @@ export const loadRockets = () => {
       rocketId.name = rocket.rocket_name;
       rocketId.description = rocket.description;
       rocketId.image = rocket.flickr_images;
-      rocketId.reserved = false;
+      // rocketId.reserved = false;
       rocketData.push(rocketId);
-    })
+    });
     dispatch(loadRocket(rocketData));
   });
 };
@@ -28,7 +28,7 @@ export const loadRockets = () => {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_ROCKET:
-      return [...state, action.payload];
+      return action.payload;
 
     default:
       return state;
