@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addReservation } from '../../redux/rockets/Rockets';
+import './rocket.css';
 
 const SingleRocket = (props) => {
   const dispatch = useDispatch();
@@ -26,7 +27,7 @@ const SingleRocket = (props) => {
           {reserved ? <span className="reserved-button">Reserved</span> : ''}
           {description}
         </p>
-        {reserved ? <button type="button" onClick={() => reservationHandler(id)}>Cancel Reservation</button> : <button type="button" onClick={() => reservationHandler(id)}>Reserve Rocket</button>}
+        {reserved ? <button type="button" onClick={() => reservationHandler(id)} className="cancel-button">Cancel Reservation</button> : <button type="button" onClick={() => reservationHandler(id)} className="reserve-button">Reserve Rocket</button>}
       </div>
     </div>
   );
