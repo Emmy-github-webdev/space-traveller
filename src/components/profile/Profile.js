@@ -1,6 +1,7 @@
 import React from 'react';
 import MyProfile from './MyProfile';
 import Header from '../header/Header';
+import MyMissions from './MyMissions';
 import './profile.css';
 
 const Profile = () => (
@@ -10,7 +11,7 @@ const Profile = () => (
       <div className="profile-mission">
         <h2>My Missions</h2>
         <div className="mission-container">
-          Mission
+          <MyMissions />
         </div>
       </div>
       <div className="profile-rocket">

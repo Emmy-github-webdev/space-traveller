@@ -5,20 +5,23 @@
   padding: 2rem;
   font-size: 15px;
   background-color: #fff;
-  border: 1px solid #ccc;
   flex-direction: row;
   align-items: center;
   color: #000;
+  margin: 2% 6%;
 }
 
 .logo .brand {
   color: #000;
   text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .header-wrapper img {
   width: 10%;
 }
+
 .nav-wrapper .navigation,
 .nav-wrapper .navigation a,
 .nav-wrapper .navigation a:hover,
@@ -26,8 +29,10 @@
   color: #000;
   padding: 5px 10px;
   text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.activeClass {
+.active {
   border-bottom: 1px solid red;
 }

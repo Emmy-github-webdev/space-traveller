@@ -6,20 +6,20 @@ import Logo from '../../images/planet.png';
 const Header = () => (
   <nav className="header-wrapper">
     <img src={Logo} alt="logo" />
-    <div className="logo">
-      <NavLink to="/" className="brand">
+    <div className="brand">
+      <h1>
         Space Traveller Hub
-      </NavLink>
+      </h1>
     </div>
     <div className="nav-wrapper">
       <div className="navigation">
-        <NavLink to="/" activeClassName="activeClass">
+        <NavLink to="/" exact activeClassName="active">
           Rockets
         </NavLink>
-        <NavLink to="/mission" activeClassName="activeClass">
+        <NavLink to="/mission" exact activeClassName="active">
           Mission
         </NavLink>
-        <NavLink to="/profile" activeClassName="activeClass">
+        <NavLink to="/profile" exact activeClassName="active">
           Profile
         </NavLink>
       </div>

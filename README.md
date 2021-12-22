@@ -1,69 +1,73 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Space Traveller's Hub
 
-> One paragraph statement about the project.
+> In this project we created a single page application using react-redux
 
-![screenshot](./app_screenshot.png)
+![screenshot](./images/image.png)
 
-Additional description about the project and its features.
+On this website you can join missions and reserve rockets
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React and Redux
+- Redux-thunk, Redux-logger, axios.
+- Javascript
 
-## Live Demo
 
-[Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
 
-### Setup
+## Prerequisites
+- A working Laptop or Desktop
+## Setup
+- Install code editor
+- Install Git bash
+- Create react app
+- Install react-redux
 
-### Install
+## Install
 
-### Usage
+clone [Bookstore](https://github.com/Emmy-github-webdev/space-traveller)
 
-### Run tests
+## Usage
+- Test your GitHub flow, a linter and professional documentation ability
+## Run tests
+- Run npm start to run the project
 
-### Deployment
 
+## Dependencies
 
+- redux 
+- react-redux 
+- redux-thunk 
+- redux-devtools-extension
+- react-router-dom
 
-## Authors
+# Authors
+👤 **Emmanuel Oga**
+- GitHub: [Emmy-github-webdev](https://github.com/Emmy-github-webdev)
+- Twitter: [@ogaemmanuel](https://twitter.com/OgaemmanuelOga).
+- LinkedIn: [@ogaemmanuel](https://www.linkedin.com/in/emmanuel-oga-16171584/)
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Anibal Amoroso**
+- GitHub: [sj1978](https://github.com/sj1978)
+- Twitter: [@AmorosoAnibal](https://twitter.com/AmorosoAnibal).
+- LinkedIn: [Anibal Amoroso](linkedin.com/in/anibalamoroso)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/Emmy-github-webdev/space-traveller/issues).
 
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a ⭐ if you like this project!
 
 ## Acknowledgments
 
@@ -74,3 +78,6 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
+
+
