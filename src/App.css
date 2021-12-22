@@ -17,7 +17,6 @@
 
 .nav-header {
   display: flex;
-  justify-content: start;
 }
 
 .nav-header h1 {

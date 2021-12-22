@@ -4,8 +4,8 @@ import {
 } from 'react-router-dom';
 import Mission from './components/Mission';
 import Rockets from './components/rockets/Rockets';
-import Profile from './components/Profile';
 import Logo from './images/planet.png';
+import Profile from './components/profile/Profile';
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
           <Routes>
             <Route exact path="/Mission" element={<Mission />} />
             <Route exact path="/" element={<Rockets />} />
-            <Route exact path="/Profile" element={<Profile />} />
+            <Route exact path="/profile" element={<Profile />} />
           </Routes>
         </main>
 
