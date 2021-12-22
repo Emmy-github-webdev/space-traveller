@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
+import Header from './header/Header';
 import { getMissions, joinMission } from '../redux/mission/missionApi';
 import styles from './Mission.module.css';
 
@@ -16,6 +17,7 @@ function Home() {
   const leave = 'Leave Mission';
   return (
     <>
+      <Header />
       <hr />
       <header className={styles.header}>
         <h4>Mission</h4>

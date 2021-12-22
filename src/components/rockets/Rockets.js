@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import SingleRocket from './SingleRocket';
 import { loadRockets } from '../../redux/rockets/Rockets';
+import Header from '../header/Header';
 import './rocket.css';
 
 const Rockets = () => {
@@ -15,17 +16,20 @@ const Rockets = () => {
   }, []);
 
   return (
-    <div className="rockets-container">
-      {rockets.map((rocket) => (
-        <SingleRocket
-          id={rocket.id}
-          key={rocket.id}
-          image={rocket.image[0]}
-          name={rocket.name}
-          description={rocket.description}
-          reserved={rocket.reserved}
-        />
-      ))}
+    <div className="container">
+      <Header />
+      <div className="rockets-container">
+        {rockets.map((rocket) => (
+          <SingleRocket
+            id={rocket.id}
+            key={rocket.id}
+            image={rocket.image[0]}
+            name={rocket.name}
+            description={rocket.description}
+            reserved={rocket.reserved}
+          />
+        ))}
+      </div>
     </div>
   );
 };
