@@ -1,17 +1,17 @@
 import './App.css';
 import {
-  BrowserRouter as Router, Routes, Route, NavLink,
+  BrowserRouter as Router, Routes, Route,
 } from 'react-router-dom';
 import Mission from './components/Mission';
 import Rockets from './components/rockets/Rockets';
-import Logo from './images/planet.png';
+/* import Logo from './images/planet.png'; */
 import Profile from './components/profile/Profile';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <nav className="nav-container">
+        {/* <nav className="nav-container">
           <div className="nav-header">
             <img src={Logo} alt="Logo" />
             <h1>Space Traveller Hub</h1>
@@ -21,7 +21,7 @@ function App() {
             <NavLink to="/Mission">Mission</NavLink>
             <NavLink to="/Profile">My Profile</NavLink>
           </div>
-        </nav>
+        </nav> */}
 
         <main>
           <Routes>
