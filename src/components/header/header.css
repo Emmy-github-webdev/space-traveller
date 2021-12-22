@@ -1,0 +1,31 @@
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 2rem;
+  font-size: 15px;
+  background-color: #3f3d56;
+  border: 1px solid #ccc;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+}
+
+.logo .brand {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-wrapper .navigation,
+.nav-wrapper .navigation a,
+.nav-wrapper .navigation a:hover,
+.nav-wrapper .navigation a:focus {
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.activeClass {
+  border-bottom: 1px solid red;
+}
