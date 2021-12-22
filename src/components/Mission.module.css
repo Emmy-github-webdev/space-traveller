@@ -1,0 +1,90 @@
+.header {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 0 10vw;
+}
+
+table {
+  padding: 0 10vw;
+}
+
+td {
+  border: 1px solid lightblue;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.tdName {
+  width: 100px;
+}
+
+.tdDesc {
+  width: 750px;
+}
+
+.h4Desc {
+  position: relative;
+  right: 120px;
+}
+
+.h4Status {
+  position: relative;
+  right: 88px;
+}
+
+.on {
+  color: whitesmoke;
+  background-color: gray;
+  height: 20px;
+  width: 105px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+}
+
+.off {
+  color: whitesmoke;
+  background-color: rgb(87, 178, 209);
+  height: 20px;
+  width: 105px;
+  border-radius: 5px;
+  font-weight: bold;
+  line-height: 13px;
+  font-size: 12px;
+  border: none;
+  text-align: center;
+}
+
+.join {
+  height: 32px;
+  width: 105px;
+  border-radius: 5px;
+  font-weight: bold;
+  line-height: 13px;
+  font-size: 13px;
+  text-align: center;
+  background-color: whitesmoke;
+  color: gray;
+}
+
+.notJoined {
+  height: 32px;
+  width: 105px;
+  border-radius: 5px;
+  font-weight: bold;
+  line-height: 13px;
+  font-size: 13px;
+  text-align: center;
+  background-color: whitesmoke;
+  color: red;
+  border: 1px solid red;
+}
