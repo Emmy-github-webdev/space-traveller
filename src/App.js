@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router, Routes, Route, NavLink,
 } from 'react-router-dom';
 import Mission from './components/Mission';
-import Rockets from './components/Rockets';
+import Rockets from './components/rockets/Rockets';
 import Profile from './components/Profile';
 import Logo from './images/planet.png';
 
