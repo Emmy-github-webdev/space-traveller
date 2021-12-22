@@ -17,7 +17,7 @@ function Home() {
   const leave = 'Leave Mission';
   return (
     <>
-    <Header />
+      <Header />
       <hr />
       <header className={styles.header}>
         <h4>Mission</h4>
