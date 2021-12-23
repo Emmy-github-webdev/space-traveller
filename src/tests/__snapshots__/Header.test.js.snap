@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check page rendering Should render without error 1`] = `
+<nav
+  className="header-wrapper"
+>
+  <img
+    alt="logo"
+    src="planet.png"
+  />
+  <div
+    className="brand"
+  >
+    <h1>
+      Space Traveller Hub
+    </h1>
+  </div>
+  <div
+    className="nav-wrapper"
+  >
+    <div
+      className="navigation"
+    >
+      <a
+        activeClassName="active"
+        aria-current="page"
+        className="active"
+        exact={true}
+        href="/"
+        onClick={[Function]}
+      >
+        Rockets
+      </a>
+      <a
+        activeClassName="active"
+        className=""
+        exact={true}
+        href="/mission"
+        onClick={[Function]}
+      >
+        Mission
+      </a>
+      <a
+        activeClassName="active"
+        className=""
+        exact={true}
+        href="/profile"
+        onClick={[Function]}
+      >
+        Profile
+      </a>
+    </div>
+  </div>
+</nav>
+`;
