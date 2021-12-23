@@ -40,7 +40,7 @@ th {
   right: 88px;
 }
 
-.on {
+.off {
   color: whitesmoke;
   background-color: gray;
   height: 20px;
@@ -51,7 +51,7 @@ th {
   text-align: center;
 }
 
-.off {
+.on {
   color: whitesmoke;
   background-color: rgb(87, 178, 209);
   height: 20px;
@@ -64,7 +64,7 @@ th {
   text-align: center;
 }
 
-.join {
+.notJoined {
   height: 32px;
   width: 105px;
   border-radius: 5px;
@@ -76,7 +76,7 @@ th {
   color: gray;
 }
 
-.notJoined {
+.join {
   height: 32px;
   width: 105px;
   border-radius: 5px;

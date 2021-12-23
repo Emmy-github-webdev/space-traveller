@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { addReservation } from '../../redux/rockets/Rockets';
+import { addReservation } from '../../redux/rockets/actions/Actions';
 import './rocket.css';
 
 const SingleRocket = (props) => {

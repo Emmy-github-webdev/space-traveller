@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import loadRockets from '../../redux/rockets/thunk/RocketAPI';
 import SingleRocket from './SingleRocket';
-import { loadRockets } from '../../redux/rockets/Rockets';
 import Header from '../header/Header';
 import './rocket.css';
 

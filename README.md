@@ -4,7 +4,7 @@
 
 > In this project we created a single page application using react-redux
 
-![screenshot](./images/image.png)
+![screenshot](/images/image.png)
 
 On this website you can join missions and reserve rockets
 
@@ -32,7 +32,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Install
 
-clone [Bookstore](https://github.com/Emmy-github-webdev/space-traveller)
+clone [Space Traveller](https://github.com/Emmy-github-webdev/space-traveller)
 
 ## Usage
 - Test your GitHub flow, a linter and professional documentation ability

@@ -1,11 +1,11 @@
-/* eslint-disable max-len */
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
 import Header from './header/Header';
-import { getMissions, joinMission } from '../redux/mission/missionApi';
+import { joinMission } from '../redux/mission/actions/Actions';
+import getMissions from '../redux/mission/thunk/ApiCall';
 import styles from './Mission.module.css';
 
-function Home() {
+function Mission() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getMissions());
@@ -34,8 +34,8 @@ function Home() {
               <tr>
                 <td className={styles.tdName}>{mission.name}</td>
                 <td className={styles.tdDesc}>{mission.desc}</td>
-                <td><button type="button" className={mission.status ? styles.on : styles.off}>{mission.status ? notMember : active}</button></td>
-                <td><button className={mission.status ? styles.join : styles.notJoined} type="button" onClick={() => dispatch(joinMission(mission.id))}>{mission.status ? join : leave}</button></td>
+                <td><button type="button" className={mission.status ? styles.on : styles.off}>{mission.status ? active : notMember}</button></td>
+                <td><button className={mission.status ? styles.join : styles.notJoined} type="button" onClick={() => dispatch(joinMission(mission.id))}>{mission.status ? leave : join}</button></td>
               </tr>
             </table>
           </>
@@ -47,4 +47,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Mission;
