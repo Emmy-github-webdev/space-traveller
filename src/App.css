@@ -1,0 +1,29 @@
+.nav-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding: 3vh 10vw;
+}
+
+.nav-container img {
+  width: 10%;
+  margin: 3px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-header {
+  display: flex;
+}
+
+.nav-header h1 {
+  margin-left: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  list-style-type: none;
+}

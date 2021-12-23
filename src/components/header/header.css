@@ -1,0 +1,38 @@
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 2rem;
+  font-size: 15px;
+  background-color: #fff;
+  flex-direction: row;
+  align-items: center;
+  color: #000;
+  margin: 2% 6%;
+}
+
+.logo .brand {
+  color: #000;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header-wrapper img {
+  width: 10%;
+}
+
+.nav-wrapper .navigation,
+.nav-wrapper .navigation a,
+.nav-wrapper .navigation a:hover,
+.nav-wrapper .navigation a:focus {
+  color: #000;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.active {
+  border-bottom: 1px solid red;
+}
