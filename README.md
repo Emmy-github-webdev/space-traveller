@@ -30,6 +30,9 @@ To get a local copy up and running follow these simple example steps.
 - Create react app
 - Install react-redux
 
+## Demo
+[Live Demo](https://stoic-mestorf-5abd39.netlify.app/)
+
 ## Install
 
 clone [Space Traveller](https://github.com/Emmy-github-webdev/space-traveller)
